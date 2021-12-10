@@ -883,7 +883,7 @@ mountTree(<App />, rootEl);
 
 * [`ReactChildReconciler`](https://github.com/facebook/react/blob/83381c1673d14cd16cf747e34c945291e5518a86/src/renderers/shared/stack/reconciler/ReactChildreconciler.js) 实现根据子元素的 `key` 挂载、更新和卸载子级的逻辑。
 
-* [`ReactMultiChild`](https://github.com/facebook/react/blob/83381c1673d14cd16cf747e34c945291e5518a86/src/renderers/shared/stack/reconciler/ReactMultiChild.js) 实现对子组件插入、删除和移动操作队列的处理，独立于渲 renderer。
+* [`ReactMultiChild`](https://github.com/facebook/react/blob/83381c1673d14cd16cf747e34c945291e5518a86/src/renderers/shared/stack/reconciler/ReactMultiChild.js) 实现对子组件插入、删除和移动操作队列的处理，独立于渲染器 renderer。
 
 * 由于遗留原因，`mount()`、 `receive()` 和 `unmount()` 在 React 代码库中实际上名字为 `mountComponent()`、`receiveComponent()` 和 `unmountComponent()`，但是它们接收元素。
 
